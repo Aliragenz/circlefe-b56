@@ -1,0 +1,17 @@
+import { useState } from "react";
+import { UserList } from "./components/userlist";
+import { UserPost } from "./components/userpost";
+
+
+const [isShowUser, setIsShowUser] = useState<boolean>(false);
+const [isShowPost, setIsShowPost] = useState<boolean>(false);
+
+|
+    <button onClick={() => setIsShowUser(!isShowUser)}>Show User</button>
+    |
+    |
+    <button onClick={() => setIsShowPost(!isShowPost)}>Show Post</button>
+    |
+
+    {isShowUser ? <UserList /> : null} 📄*/}
+    {isShowPost ? <UserPost /> : null} {/*📄
