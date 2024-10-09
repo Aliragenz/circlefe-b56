@@ -42,9 +42,7 @@ const FollowPage = () => {
         >
                     <Center height="70vh">
                         <VStack>
-                            <Text color="white.500" fontSize="xl" fontWeight="bold">
-                                No results for "{searchTerm}"
-                            </Text>
+                            
                             <Text color="gray.500" fontSize="md">
                                 Try searching for something else or check the
                             </Text>
@@ -54,7 +52,7 @@ const FollowPage = () => {
                         </VStack>
                     </Center>
                 )
-            ) : null}
+            )
         </Box>
     );
 };
