@@ -12,7 +12,7 @@ export function ResetPassword() {
     resolver: zodResolver(resetPasswordSchema),
   });
 
-  function handleFormSubmit(form: ResetPasswordFormInputs) {
+  function handleFormSubmit(_form: ResetPasswordFormInputs) {
     navigate('/login');
   }
 

@@ -23,7 +23,6 @@ import {
 import { FaRegHeart, FaHeart, FaArrowLeft } from "react-icons/fa6";
 import { PiChatCenteredTextLight } from "react-icons/pi";
 import { useNavigate } from 'react-router-dom';
-import ProfilePhoto from '@/img/girl3.jpg';
 import OwnPost1 from '@/img/img1.jpg';
 import OwnPost2 from '@/img/img2.jpg';
 import OwnPost3 from '@/img/img3.jpg';
@@ -37,9 +36,6 @@ import { RootState } from '@/store/store';
 import { ThreadEntity } from '@/entities/thread';
 import { apiV1 } from '@/libs/api';
 import { useQuery, useMutation, useQueryClient } from '@tanstack/react-query';
-
-// Custom spacing component
-const CustomSpace = ({ height = '16px' }) => <Box height={height} />;
 
 interface MiddleSideProps {
   onOpenEditProfileModal: () => void;

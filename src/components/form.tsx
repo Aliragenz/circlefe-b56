@@ -73,31 +73,31 @@ export function Form({
         )}
         {showEmailUsername && (
           <>
-            {errors?.email && <p style={{ color: 'red' }}>{errors.email.message}</p>}
+            {errors?.email && <p style={{ color: 'red' }}>{(errors as any).email.message}</p>}
             <Input {...register("email")} placeholder="Email/Username*" bg="#2C2C2C" borderColor="#3A3A3A" mb="4" color="#FFF" />
           </>
         )}
         {showEmail && (
           <>
-            {errors?.email && <p style={{ color: 'red' }}>{errors.email.message}</p>}
+            {errors?.email && <p style={{ color: 'red' }}>{(errors as any).email.message}</p>}
             <Input {...register("email")} placeholder="Email*" bg="#2C2C2C" borderColor="#3A3A3A" mb="4" color="#FFF" />
           </>
         )}
         {showPassword && (
           <>
-            {errors?.password && <p style={{ color: 'red' }}>{errors.password.message}</p>}
+            {errors?.password && <p style={{ color: 'red' }}>{(errors as any).password.message}</p>}
             <Input {...register("password")} type="password" placeholder="Password*" bg="#2C2C2C" borderColor="#3A3A3A" mb="4" color="#FFF" />
           </>
         )}
         {showNewPassword && (
           <>
-            {errors?.newpassword && <p style={{ color: 'red' }}>{errors.newpassword.message}</p>}
+            {errors?.newpassword && <p style={{ color: 'red' }}>{(errors as any).newpassword.message}</p>}
             <Input {...register("newpassword")} type="password" placeholder="New Password*" bg="#2C2C2C" borderColor="#3A3A3A" mb="4" color="#FFF" />
           </>
         )}
         {showConfirmNewPassword && (
           <>
-            {errors.confirmnewpassword && <p style={{ color: 'red' }}>{errors.confirmnewpassword.message}</p>}
+            {errors.confirmnewpassword && <p style={{ color: 'red' }}>{(errors as any).confirmnewpassword.message}</p>}
             <Input {...register("confirmnewpassword")} type="password" placeholder="Confirm New Password*" bg="#2C2C2C" borderColor="#3A3A3A" mb="4" color="#FFF" />
           </>
         )}

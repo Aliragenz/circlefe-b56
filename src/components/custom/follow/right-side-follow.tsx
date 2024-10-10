@@ -1,6 +1,5 @@
 import React from 'react';
-import { Box, VStack, Heading, Avatar, Text, Button, List, ListItem, HStack, Icon, Img, Center } from '@chakra-ui/react';
-import ProfilePhoto from '@/img/girl3.jpg';
+import { Box, VStack, Heading, Avatar, Text, Button, List, ListItem, HStack, Icon, Img } from '@chakra-ui/react';
 import { IoLogoGithub } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
