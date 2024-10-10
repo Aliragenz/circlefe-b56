@@ -18,7 +18,7 @@ export function useRegisterForm() {
 
   async function handleFormSubmit({email, password, fullName}: RegisterFormInputs) {
     try {
-      const response = await axios.post<null, {data: RegisterResponseDTO}, RegisterRequestDTO>("http://localhost:5000/api/v1/auth/register", 
+      const response = await axios.post<null, {data: RegisterResponseDTO}, RegisterRequestDTO>("https://circlebe-b56.vercel.app/api/v1/auth/register", 
         {
         email,
         fullName,

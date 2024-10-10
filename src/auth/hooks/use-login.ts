@@ -19,7 +19,7 @@ export function useLoginForm() {
 
   async function handleFormSubmit({ email, password }: LoginFormInputs) {
     try {
-      const response = await axios.post<LoginResponseDTO>("http://localhost:5000/api/v1/auth/login", {
+      const response = await axios.post<LoginResponseDTO>("https://circlebe-b56.vercel.app/api/v1/auth/login", {
         email,
         password,
       });
